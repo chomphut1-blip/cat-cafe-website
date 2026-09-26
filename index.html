@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff7ef" />
+  <title>Cat Café 12 — คาเฟ่แมว 12 ตัว</title>
+  <meta name="description" content="เว็บไซต์ตัวอย่างคาเฟ่แมว 12 ตัว พร้อมเมนู แพ็กเกจ กติกา Cat Club และโปรไฟล์น้องแมว" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600;700;800&family=Mali:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Cat Café 12 home">
+      <span class="brand-mark">🐾</span>
+      <span><strong>Cat Café 12</strong><small>coffee • cats • cozy time</small></span>
+    </a>
+    <nav id="nav" aria-label="เมนูหลัก">
+      <a href="#cats">น้องแมว 12 ตัว</a>
+      <a href="#menu">เมนู</a>
+      <a href="#rules">กติกา</a>
+      <a href="#club">Cat Club</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="เปิดเมนู">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">🐱 คาเฟ่แมว 12 ตัว ที่ทุกแก้วมีเสียงเหมียว</p>
+        <h1>พักใจสักแก้ว<br><span>แล้วปล่อยให้แมวดูแลคุณ</span></h1>
+        <p class="lead">คาเฟ่บรรยากาศอบอุ่นสำหรับคนรักกาแฟและคนรักแมว พบกับน้องแมว 12 คาแรกเตอร์ เมนูเครื่องดื่ม ของหวาน และมุมพักผ่อนที่อยากให้อยู่ต่ออีกนิด</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#cats">รู้จักน้องแมวทั้ง 12</a>
+          <a class="btn ghost" href="#menu">ดูเมนูและแพ็กเกจ</a>
+        </div>
+        <div class="quick-stats">
+          <div><strong>12</strong><span>น้องแมวประจำร้าน</span></div>
+          <div><strong>45</strong><span>นาที / รอบแนะนำ</span></div>
+          <div><strong>14</strong><span>วันสิทธิ์กลับมาซ้ำ*</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="hero-card card-a"><span>☕</span><b>เครื่องดื่มสดใหม่</b></div>
+        <div class="hero-card card-b"><span>🐾</span><b>12 คาแรกเตอร์</b></div>
+        <div class="cat-scene">
+          <div class="cat-body big-cat">🐈</div>
+          <div class="cat-body small-cat">🐈‍⬛</div>
+          <div class="table"><div class="cup">☕</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro">
+      <div class="section-heading compact">
+        <p class="eyebrow">WELCOME TO OUR CAT HOUSE</p>
+        <h2>เลือกมุมโปรด จิบแก้วโปรด แล้วเจอแมวที่ใช่</h2>
+      </div>
+      <div class="feature-grid">
+        <article><span>☕</span><h3>Drink & Treat</h3><p>กาแฟ ชา โซดา และของหวานแบบทานง่ายระหว่างพักกับน้องแมว</p></article>
+        <article><span>🐈</span><h3>Meet 12 Cats</h3><p>มีทั้งสายอ้อน สายเล่น สายชิล และสายขี้อาย เลือกทำความรู้จักตามสไตล์คุณ</p></article>
+        <article><span>📷</span><h3>Cozy Photo Spot</h3><p>มุมถ่ายรูปโทนอุ่น เฟอร์นิเจอร์ไม้ และแสงธรรมชาติ ใช้ได้ทั้งวันสบาย ๆ</p></article>
+        <article><span>💌</span><h3>Come Back Club</h3><p>สร้างความสัมพันธ์หลังการเยี่ยมร้านด้วย Cat Club และสิทธิ์กลับมาเล่นซ้ำ</p></article>
+      </div>
+    </section>
+
+    <section class="section cats-section" id="cats">
+      <div class="section-heading">
+        <div><p class="eyebrow">MEET THE FAMILY</p><h2>น้องแมวประจำร้านทั้ง 12 ตัว</h2></div>
+        <div class="filters" role="group" aria-label="กรองบุคลิกแมว">
+          <button class="filter active" data-filter="all">ทั้งหมด</button>
+          <button class="filter" data-filter="อ้อน">สายอ้อน</button>
+          <button class="filter" data-filter="เล่น">สายเล่น</button>
+          <button class="filter" data-filter="ชิล">สายชิล</button>
+        </div>
+      </div>
+      <div class="cat-grid" id="catGrid"></div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="section-heading light">
+        <div><p class="eyebrow">SIP & SMILE</p><h2>เมนูและแพ็กเกจแนะนำ</h2></div>
+        <p>ราคาเป็นตัวอย่างสำหรับงานนำเสนอ สามารถแก้ไขได้จากไฟล์ <code>script.js</code></p>
+      </div>
+      <div class="menu-layout">
+        <div class="menu-list">
+          <article><div><span class="menu-icon">☕</span><h3>Cat Latte</h3><p>ลาเต้เนียนนุ่ม + ลายอุ้งเท้า</p></div><strong>85.-</strong></article>
+          <article><div><span class="menu-icon">🍓</span><h3>Pink Paw Soda</h3><p>สตรอว์เบอร์รีโซดาหอมสดชื่น</p></div><strong>79.-</strong></article>
+          <article><div><span class="menu-icon">🍫</span><h3>Brownie Paws</h3><p>บราวนี่ช็อกโกแลตเข้ม เสิร์ฟอุ่น</p></div><strong>89.-</strong></article>
+          <article><div><span class="menu-icon">🍵</span><h3>Matcha Meow</h3><p>มัทฉะนมสด หอมชา ไม่หวานจัด</p></div><strong>95.-</strong></article>
+        </div>
+        <aside class="pass-card">
+          <p class="tag">POPULAR</p>
+          <span class="huge">🐱</span>
+          <h3>Cat Time Pass</h3>
+          <p>เครื่องดื่ม 1 แก้ว + เวลาเล่นกับน้องแมว 45 นาที</p>
+          <div class="price"><b>159</b><span>บาท / คน</span></div>
+          <a class="btn dark" href="#contact">จองรอบ</a>
+          <small>*ตัวอย่างราคา ปรับได้ตามเงื่อนไขร้านจริง</small>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section rules-section" id="rules">
+      <div class="section-heading compact">
+        <p class="eyebrow">HAPPY CATS, HAPPY PEOPLE</p>
+        <h2>กติกาง่าย ๆ เพื่อให้น้องแมวสบายใจ</h2>
+      </div>
+      <div class="rules-grid">
+        <div><b>01</b><h3>ล้างมือก่อนเล่น</h3><p>รักษาความสะอาดก่อนเข้าพื้นที่น้องแมวทุกครั้ง</p></div>
+        <div><b>02</b><h3>ไม่อุ้มโดยพลการ</h3><p>ให้น้องเป็นฝ่ายเข้าหา หรือสอบถามพนักงานก่อน</p></div>
+        <div><b>03</b><h3>ไม่ปลุกตอนหลับ</h3><p>เวลาพักของน้องสำคัญพอ ๆ กับเวลาเล่น</p></div>
+        <div><b>04</b><h3>งดแฟลช</h3><p>ถ่ายรูปได้ แต่หลีกเลี่ยงแฟลชและเสียงดังใกล้น้อง</p></div>
+      </div>
+    </section>
+
+    <section class="section club-section" id="club">
+      <div class="club-card">
+        <div>
+          <p class="eyebrow">CAT CLUB</p>
+          <h2>จาก “แวะมาครั้งเดียว” เป็น “คิดถึงแล้วกลับมาอีก”</h2>
+          <p>หลังชำระเงิน ลูกค้าสามารถสมัคร Cat Club เพื่อรับข่าวจากน้องแมว คูปองวันเกิด และสิทธิ์กลับมาเยี่ยมภายใน 14 วัน ช่วยให้ร้านมีช่องทางดูแลความสัมพันธ์กับลูกค้าหลังจบการใช้บริการ</p>
+          <ul><li>รับ Stamp ทุกครั้งที่มา</li><li>ครบ 5 Stamp รับเครื่องดื่มฟรี 1 แก้ว*</li><li>สิทธิ์พิเศษสำหรับสมาชิกในช่วงกิจกรรม</li></ul>
+        </div>
+        <form class="club-form" id="clubForm">
+          <div class="paw-bubble">🐾</div>
+          <h3>สมัคร Cat Club</h3>
+          <label>ชื่อเล่น<input required name="nickname" placeholder="เช่น มิ้นท์"></label>
+          <label>ช่องทางติดต่อ<input required name="contact" placeholder="LINE / โทรศัพท์"></label>
+          <button class="btn primary full" type="submit">สมัครสมาชิกทดลอง</button>
+          <p class="form-note" id="clubMsg">*ฟอร์มตัวอย่าง ยังไม่ได้เชื่อมฐานข้อมูล</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-copy">
+        <p class="eyebrow">VISIT US</p><h2>มาหาแมวทั้ง 12 กันนะ</h2>
+        <p>แก้ไขที่อยู่ เบอร์โทร และเวลาเปิดร้านให้ตรงกับข้อมูลจริงก่อนเผยแพร่เว็บไซต์</p>
+        <div class="contact-cards">
+          <div><span>📍</span><p><b>ที่อยู่ร้าน</b><br>88/1 ซอยสุขุมวิท 24, คลองตัน, คลองเตย, กรุงเทพฯ 10110</p></div>
+          <div><span>🕚</span><p><b>เวลาเปิด</b><br>11:00–20:00 น.</p></div>
+          <div><span>☎️</span><p><b>ติดต่อ</b><br>02-123-4567 ·Line @meowmilkcafe</p></div>
+        </div>
+      </div>
+      <form class="booking-form" id="bookingForm">
+        <h3>จองเวลาเข้าร้าน</h3>
+        <div class="two-col"><label>ชื่อ<input required name="name"></label><label>จำนวนคน<select name="guests"><option>1 คน</option><option>2 คน</option><option>3 คน</option><option>4 คน</option></select></label></div>
+        <div class="two-col"><label>วันที่<input required type="date" name="date"></label><label>รอบเวลา<select name="time"><option>11:30</option><option>13:00</option><option>14:30</option><option>16:00</option><option>17:30</option></select></label></div>
+        <label>ข้อความเพิ่มเติม<textarea name="note" rows="3" placeholder="เช่น แพ้ขนแมว / มาฉลองวันเกิด"></textarea></label>
+        <button class="btn dark full" type="submit">ส่งคำขอจอง</button>
+        <p class="form-note" id="bookingMsg">*เว็บไซต์ตัวอย่าง ไม่ได้ส่งข้อมูลออกจากเครื่อง</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark">🐾</span><span><strong>Cat Café 12</strong><small>coffee • cats • cozy time</small></span></div>
+    <p>เว็บไซต์ต้นแบบสำหรับโปรเจกต์คาเฟ่แมว • ปรับชื่อร้าน ราคา และข้อมูลติดต่อก่อนใช้งานจริง</p>
+    <a href="#home">กลับด้านบน ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
